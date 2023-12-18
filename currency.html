@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Currency converter </title>
+    <link rel="stylesheet" href="currency.css">
+</head>
+<body>
+ <div class="headingContainer">
+    <h1>CURRENCY CONVERTER</h1>
+    <hr>
+    <div class="currency-container1">
+        <select id="currency-first">
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR">INR</option>
+            <option value="JPY">JPY</option>
+            <option value="USD" selected>USD</option>
+            <option value="KW">KW</option>
+        </select>
+         <input type="number" id="first-converter" value="1" min="0">
+    </div>
+
+    <div class="currency-container1">
+        <select id="currency-second">
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR" selected>INR</option>
+            <option value="JPY">JPY</option>
+            <option value="USD">USD</option>
+            <option value="KW">KW</option>
+        </select>
+         <input type="number" id="second-converter" disabled>
+    </div>
+
+    <p class="exchange-rate" id="exchange-rate">
+        Exchange rate: 1 USD = 81 INR
+    </p>
+
+
+ </div>
+
+ <script src="currency.js"></script>
+    
+</body>
+</html>
